@@ -1,20 +1,191 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>JackVasu.me</title>
-    <style>
-        h1 {text-align: center}
-
-    </style>
-
+        <title>Jack Vasu </title>
+        <link href="style.css" rel = "stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
     </head>
 
-<body style="background-color:grey">
+    <body> 
+        <div class="header">
+            <div class="site-logo">
+                <div>Jack Vasu</div>
+            </div>
+            <div class="site-links">
+                <a class="page-link" id="about-link" href="#first-section">About</a>
+                <a class="page-link" id="skills-link" href="#second-section">Skills</a>
+                <a class="page-link" id="projects-link" href="#third-section">Projects</a>
+                <a class="page-link" id="contact-link" href="#footer">Contact</a>
+            </div>
+        </div>
+        <div class="section" id="first-section">
+            <div id="first-container" class="container-horizontal">
+                <div class="img-container">
+                    <img id="grad-pic" src="img/grad-pic.jpeg">
+                </div>
+                <div class="img-text">
+                    <div id="large-caption">Hi, I'm Jack.</div>
+                    <div id="small-caption">I'm a Junior at Dartmouth College majoring in Computer Science. I'm originally from Newton, MA. For the winter, I'm living in Hanover and trying to stay warm. I love to code, play tennis, and wsatch the Patriots.</div>
+                </div>
+            </div>
+        </div>
 
-    <b><h1> Jack's Landing Page</h1></b>
-    <p> Hello! I'm Jack Vasu, a 22 from Boston, MA. </p>
-    <p> I've heard great things about this class. I've made 1 site in the past, but it wasn't pretty.</p>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> here's a link to the site</a>
+        <div class="section" id="second-section">
+            <div class="container-vertical">
+                <div class="section-title">Skills and Experience</div>
+                <div class="container-horizontal" id="lists">
+                    <div class="courses">
+                        <div class="bullet-section-title">Courses</div>
+                        <div class="list">
+                            <ul>
+                                <li>Software Design & Implementation</li>
+                                <li>Algorithms</li>
+                                <li>AR and VR Development</li>
+                                <li>Full-Stack Web Development</li>
+                                <li>Security & Privacy</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="courses">
+                        <div class="bullet-section-title">Skills/Languages</div>
+                        <div id="two-slots">
+                            <div class="inner-list">
+                                <div>Proficient</div>
+                                <div class="list">
+                                    <ul>
+                                        <li>Python</li>
+                                        <li>Java</li>
+                                        <li>JavaScript</li>
+                                        <li>HTML/CSS</li>
+                                        <li>React</li>
+                                        <li>PHP</li>
+                                        <li>C#</li>
+                                    </ul>
+                                </div>
+                               
+                            </div>
 
-</body>
+                            <div class="inner-list">
+                                <div>Familiar</div>
+                                <div class="list">
+                                    <ul>
+                                        <li>C</li>
+                                        <li>SQL</li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-vertical" id="third-section">
+            <div class="section-title" id="section-title-projects">Projects</div>
+            <div class="project-container">
+                <div class="project" id="MyRuns">
+                <img class="icon" src="https://image.flaticon.com/icons/svg/763/763965.svg">
+                <div class="project-text">
+                    <div class="project-title">MyRuns</div>
+                    <div class="project-class">CS65: Smartphone Programming</div>
+                </div>
+                <div id="myruns-button" class="project-button">Learn More</div>
+                </div>
+                <div class="project" id="ReactNotes" >
+                    <img class="icon" src="https://image.flaticon.com/icons/svg/1159/1159633.svg">
+                    <div class="project-text">
+                        <div class="project-title">Firebase Note Web App</div>
+                        <div class="project-class">CS52: Full-Stack Web Development</div>
+                    </div>
+                    <div id="reactnotes-button" class="project-button">Learn More</div>
+                </div>
+            </div>
+            <div class="project-container">
+                <div class="project" id="CS70">
+                    <img class="icon" src="https://image.flaticon.com/icons/svg/2970/2970533.svg">
+                    <div class="project-text">
+                        <div class="project-title">Image Recognition Neural Network</div>
+                        <div class="project-class">CS70.01: Foundations of Applied CS</div>
+                    </div>
+                    <div id="cs70-button" class="project-button">Learn More</div>
+                </div>
+                <div class="project" id="KB-game">
+                    <img class="icon" src="https://image.flaticon.com/icons/svg/860/860306.svg">
+                    <div class="project-text">
+                        <div class="project-title">Kevin Bacon Game</div>
+                        <div class="project-class">CS10: Problem Solving via Object Oriented Programming</div>
+                    </div>
+                    <div id="bacon-button" class="project-button">Learn More</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="myruns-modal">
+            <div class="modal-content">
+                <span id="myruns-close" class="close">&times;</span>
+                <div class="modal-container">
+                    <div class="description-title">MyRuns</div>
+                    <div class="description-text">MyRuns is an Android app I developed using Java and XML over six weeks as a part of my Smartphone Programming class 
+                        that uses Google Maps to track your movements while exercising, and Firebase to store your data. 
+                        The development of the app was broken into four different assignments. First, I created authentification and saved 
+                        profiles with photo storage. For the second assignment, I finished the UI and added the ability to manually add exercises. 
+                        For the third assignment, I implemented the Firebase database. Finally, for the last assignment I added the Google Maps based tracking feature. This project is available on my Github.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="reactnotes-modal">
+            <div class="modal-content">
+                <span id="reactnotes-close" class="close">&times;</span>
+                <div class="modal-container">
+                    <div class="description-title">React Notes</div>
+                    <div class="description-text">For this project, I designed a note creation, deletion, and editing web application using React. All of the note information 
+                        is stored using Firebase, so multiple users can edit the note page at the same time. Additionally, the note text supports markup. This project is available on my Github.</div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="cs70-modal">
+            <div class="modal-content">
+                <span id="cs70-close" class="close">&times;</span>
+                <div class="modal-container">
+                    <div class="description-title">Image Recognition Neural Network</div>
+                    <div class="description-text">This was my final project for COSC70.01: Foundations of Applied Computer Science. I worked with a partner, and we created an image classification neural network using multiple linear layers and ReLU layers. The neural network was trained using hand written images of single digit numbers, and was able to accurately classify a similar set of hand written single digit numbers with an 84% success rate. The code is available on my Github. </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="bacon-modal">
+            <div class="modal-content">
+                <span id="bacon-close" class="close">&times;</span>
+                <div class="modal-container">
+                    <div class="description-title">Kevin Bacon</div>
+                    <div class="description-text">For this project, I was tasked with determine the “Kevin Bacon Number” for an inputted actor. That is, the degrees of separation in movies acted in from the inputted actor to Kevin Bacon. First, I was given a large dataset of actors and the movies they’ve been in. I then constructed a graph and preformed Breadth First Search in order to find the degrees of separation. I also determined other information about the dataset, such as which actor was the best center of the universe based on average degrees of separation. This lab was written in Java, and is available on my Github. </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer" id="footer">
+            <div id="footer-text">Contact Me!</div>
+            <div class="footer-container">
+                <a href="https://www.linkedin.com/in/jack-vasu-b2145118a/">
+                    <img class="footer-img" src="https://image.flaticon.com/icons/svg/1384/1384014.svg"></img>
+                </a>
+                <a href="https://github.com/vasuvius">
+                    <img class="footer-img" src="https://image.flaticon.com/icons/svg/2111/2111425.svg"></img>
+                </a>
+                
+                <a href="mailto:jack.f.vasu.22@dartmouth.edu">
+                    <img class="footer-img" src="https://image.flaticon.com/icons/svg/561/561127.svg"></img>
+                </a>
+            </div>
+        </div>
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+       
+    </body>
+
 </html>
