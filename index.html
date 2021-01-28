@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Jack Vasu </title>
-        <link href="style.css" rel = "stylesheet" type="text/css">
+        <link href="./style.css" rel = "stylesheet" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
     </head>
@@ -22,15 +22,97 @@
         <div class="section" id="first-section">
             <div id="first-container" class="container-horizontal">
                 <div class="img-container">
-                    <img id="grad-pic" src="img/grad-pic.jpeg">
+                    <img id="grad-pic" src="">
                 </div>
                 <div class="img-text">
                     <div id="large-caption">Hi, I'm Jack.</div>
-                    <div id="small-caption">I'm a Junior at Dartmouth College majoring in Computer Science. I'm originally from Newton, MA. For the winter, I'm living in Hanover and trying to stay warm. I love to code, play tennis, and wsatch the Patriots.</div>
+                    <div id="small-caption">I'm a Junior at Dartmouth College majoring in Computer Science. I'm originally from Newton, MA. For the winter I'm working for the Robertson lab coding tests for autism research. I love to code, play tennis, and watch the Patriots.</div>
                 </div>
             </div>
         </div>
-
+        <div class="container-vertical" id="third-section">
+            <div class="section-title" id="section-title-projects">Projects</div>
+            <div class="project-container">
+                <div class="project" id="MyRuns">
+                <img class="icon" src="https://image.flaticon.com/icons/svg/763/763965.svg">
+                <div class="project-text">
+                    <div class="project-title">MyRuns</div>
+                    <div class="project-class">CS65: Smartphone Programming</div>
+                </div>
+                <div id="myruns-button" class="project-button">Learn More</div>
+                </div>
+                <div class="project" id="ReactNotes" >
+                    <img class="icon" src="https://image.flaticon.com/icons/svg/1159/1159633.svg">
+                    <div class="project-text">
+                        <div class="project-title">Firebase Note Web App</div>
+                        <div class="project-class">CS52: Full-Stack Web Development</div>
+                    </div>
+                    <div id="reactnotes-button" class="project-button">Learn More</div>
+                </div>
+            </div>
+            <div class="project-container">
+                <div class="project" id="CS70">
+                    <img class="icon" src="https://image.flaticon.com/icons/svg/2970/2970533.svg">
+                    <div class="project-text">
+                        <div class="project-title">Image Recognition Neural Network</div>
+                        <div class="project-class">CS70.01: Foundations of Applied CS</div>
+                    </div>
+                    <div id="cs70-button" class="project-button">Learn More</div>
+                </div>
+                <div class="project" id="KB-game">
+                    <img class="icon" src="https://image.flaticon.com/icons/svg/860/860306.svg">
+                    <div class="project-text">
+                        <div class="project-title">Kevin Bacon Game</div>
+                        <div class="project-class">CS10: Problem Solving via Object Oriented Programming</div>
+                    </div>
+                    <div id="bacon-button" class="project-button">Learn More</div>
+                </div>
+            </div>
+        </div>
+        <!-- run a carousel here of project I've done in the past! -->
+        <div class="modal" id="myruns-modal">
+            <div class="modal-content">
+                <span id="myruns-close" class="close">&times;</span>
+                <div class="modal-container">
+                    <div class="description-title">MyRuns</div>
+                    <div class="description-text">MyRuns is an Android app I developed using Java and XML over six weeks as a part of my Smartphone Programming class 
+                        that uses Google Maps to track your movements while exercising, and Firebase to store your data. 
+                        The development of the app was broken into four different assignments. First, I created authentification and saved 
+                        profiles with photo storage. For the second assignment, I finished the UI and added the ability to manually add exercises. 
+                        For the third assignment, I implemented the Firebase database. Finally, for the last assignment I added the Google Maps based tracking feature. This project is available on my Github.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 
+        <div class="modal" id="reactnotes-modal">
+            <div class="modal-content">
+                <span id="reactnotes-close" class="close">&times;</span>
+                <div class="modal-container">
+                    <div class="description-title">React Notes</div>
+                    <div class="description-text">For this project, I designed a note creation, deletion, and editing web application using React. All of the note information 
+                        is stored using Firebase, so multiple users can edit the note page at the same time. Additionally, the note text supports markup. This project is available on my Github.</div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="cs70-modal">
+            <div class="modal-content">
+                <span id="cs70-close" class="close">&times;</span>
+                <div class="modal-container">
+                    <div class="description-title">Image Recognition Neural Network</div>
+                    <div class="description-text">This was my final project for COSC70.01: Foundations of Applied Computer Science. I worked with a partner, and we created an image classification neural network using multiple linear layers and ReLU layers. The neural network was trained using hand written images of single digit numbers, and was able to accurately classify a similar set of hand written single digit numbers with an 84% success rate. The code is available on my Github. </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="bacon-modal">
+            <div class="modal-content">
+                <span id="bacon-close" class="close">&times;</span>
+                <div class="modal-container">
+                    <div class="description-title">Kevin Bacon</div>
+                    <div class="description-text">For this project, I was tasked with determine the “Kevin Bacon Number” for an inputted actor. That is, the degrees of separation in movies acted in from the inputted actor to Kevin Bacon. First, I was given a large dataset of actors and the movies they’ve been in. I then constructed a graph and preformed Breadth First Search in order to find the degrees of separation. I also determined other information about the dataset, such as which actor was the best center of the universe based on average degrees of separation. This lab was written in Java, and is available on my Github. </div>
+                </div>
+            </div>
+        </div> -->
         <div class="section" id="second-section">
             <div class="container-vertical">
                 <div class="section-title">Skills and Experience</div>
@@ -72,7 +154,6 @@
                                     <ul>
                                         <li>C</li>
                                         <li>SQL</li>
-                                        <li></li>
                                     </ul>
                                 </div>
                             </div>
@@ -81,89 +162,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="container-vertical" id="third-section">
-            <!-- <div class="section-title" id="section-title-projects">Projects</div>
-            <div class="project-container">
-                <div class="project" id="MyRuns">
-                <img class="icon" src="https://image.flaticon.com/icons/svg/763/763965.svg">
-                <div class="project-text">
-                    <div class="project-title">MyRuns</div>
-                    <div class="project-class">CS65: Smartphone Programming</div>
-                </div>
-                <div id="myruns-button" class="project-button">Learn More</div>
-                </div>
-                <div class="project" id="ReactNotes" >
-                    <img class="icon" src="https://image.flaticon.com/icons/svg/1159/1159633.svg">
-                    <div class="project-text">
-                        <div class="project-title">Firebase Note Web App</div>
-                        <div class="project-class">CS52: Full-Stack Web Development</div>
-                    </div>
-                    <div id="reactnotes-button" class="project-button">Learn More</div>
-                </div>
-            </div>
-            <div class="project-container">
-                <div class="project" id="CS70">
-                    <img class="icon" src="https://image.flaticon.com/icons/svg/2970/2970533.svg">
-                    <div class="project-text">
-                        <div class="project-title">Image Recognition Neural Network</div>
-                        <div class="project-class">CS70.01: Foundations of Applied CS</div>
-                    </div>
-                    <div id="cs70-button" class="project-button">Learn More</div>
-                </div>
-                <div class="project" id="KB-game">
-                    <img class="icon" src="https://image.flaticon.com/icons/svg/860/860306.svg">
-                    <div class="project-text">
-                        <div class="project-title">Kevin Bacon Game</div>
-                        <div class="project-class">CS10: Problem Solving via Object Oriented Programming</div>
-                    </div>
-                    <div id="bacon-button" class="project-button">Learn More</div>
-                </div>
-            </div> -->
-        </div>
-
-        <!-- <div class="modal" id="myruns-modal">
-            <div class="modal-content">
-                <span id="myruns-close" class="close">&times;</span>
-                <div class="modal-container">
-                    <div class="description-title">MyRuns</div>
-                    <div class="description-text">MyRuns is an Android app I developed using Java and XML over six weeks as a part of my Smartphone Programming class 
-                        that uses Google Maps to track your movements while exercising, and Firebase to store your data. 
-                        The development of the app was broken into four different assignments. First, I created authentification and saved 
-                        profiles with photo storage. For the second assignment, I finished the UI and added the ability to manually add exercises. 
-                        For the third assignment, I implemented the Firebase database. Finally, for the last assignment I added the Google Maps based tracking feature. This project is available on my Github.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal" id="reactnotes-modal">
-            <div class="modal-content">
-                <span id="reactnotes-close" class="close">&times;</span>
-                <div class="modal-container">
-                    <div class="description-title">React Notes</div>
-                    <div class="description-text">For this project, I designed a note creation, deletion, and editing web application using React. All of the note information 
-                        is stored using Firebase, so multiple users can edit the note page at the same time. Additionally, the note text supports markup. This project is available on my Github.</div>
-                </div>
-            </div>
-        </div>
-        <div class="modal" id="cs70-modal">
-            <div class="modal-content">
-                <span id="cs70-close" class="close">&times;</span>
-                <div class="modal-container">
-                    <div class="description-title">Image Recognition Neural Network</div>
-                    <div class="description-text">This was my final project for COSC70.01: Foundations of Applied Computer Science. I worked with a partner, and we created an image classification neural network using multiple linear layers and ReLU layers. The neural network was trained using hand written images of single digit numbers, and was able to accurately classify a similar set of hand written single digit numbers with an 84% success rate. The code is available on my Github. </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal" id="bacon-modal">
-            <div class="modal-content">
-                <span id="bacon-close" class="close">&times;</span>
-                <div class="modal-container">
-                    <div class="description-title">Kevin Bacon</div>
-                    <div class="description-text">For this project, I was tasked with determine the “Kevin Bacon Number” for an inputted actor. That is, the degrees of separation in movies acted in from the inputted actor to Kevin Bacon. First, I was given a large dataset of actors and the movies they’ve been in. I then constructed a graph and preformed Breadth First Search in order to find the degrees of separation. I also determined other information about the dataset, such as which actor was the best center of the universe based on average degrees of separation. This lab was written in Java, and is available on my Github. </div>
-                </div>
-            </div>
-        </div> -->
 
         <div class="footer" id="footer">
             <div id="footer-text">Contact Me!</div>

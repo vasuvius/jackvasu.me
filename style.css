@@ -1,5 +1,5 @@
 html{
-    background-color: #3AAFA9;
+    background-color: rosybrown;
     font-family: 'Work Sans', sans-serif;
     margin: 0;
 }
@@ -20,6 +20,7 @@ html{
     background-color: #def2f1;
     position: fixed;
     width: 100%;
+    margin-top:-20px;
 }
 
 .page-link {
@@ -81,11 +82,14 @@ html{
 }
 
 #second-section {
-    background-color: #def2f1;
     padding-top: 100px;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
 }
-
+#third-section{
+    background-color: whitesmoke;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 .section-title{
     font-size: 30px;
     padding: 20px;
@@ -94,16 +98,15 @@ html{
 
 .courses{
     background-color: #feffff;
-    border-radius: 25px;
+    border-radius: px;
     border: 2px solid #17252A;
     margin: 10px;
 }
 
 .courses:hover{
-    transition: ease all .5s;
-    background-color: #3AAFA9;
-    color: #feffff;
-    border: 2px solid #3AAFA9;
+    background-color: lightgray;
+    transform: scale(1.04);
+    transition: all ease 500ms;
 }
 
 .bullet-section-title{
@@ -160,7 +163,7 @@ html{
 
 
 .footer-img {
-    width: 125px;
+    width: 75px;
     height: auto;
     padding: 30px;
 }
