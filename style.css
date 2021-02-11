@@ -119,6 +119,10 @@ html{
     width: 40rem;
     padding-left: 4rem;
 }
+#sublit-description{
+    padding-right: 4rem;
+    padding-left: 0rem;
+}
 
 .section-title{
     font-size: 40px;
