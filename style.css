@@ -106,6 +106,7 @@ html{
 .project-picture{
     width: 18rem;
     height:200px;
+    align-self: center;
 }
 .project-body{
     display:flex;
@@ -116,6 +117,7 @@ html{
     color: white;
     width: 40rem;
     padding-left: 4rem;
+    text-align:center;
 }
 #sublit-description{
     padding-right: 4rem;
